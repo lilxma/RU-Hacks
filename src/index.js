@@ -3,7 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router } from 'react-router-dom';
+//import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import RegistrationPage from './Registration';
+import HomePage from "./Home";
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+      <BrowserRouter>
+       <Switch>
+        <Route exact path= "/" component={HomePage} />
+        <Route path="/registration" component={RegistrationPage} />
+      </Switch>
+      </BrowserRouter>,
+      rootElement
+    );
 /*
 ReactDOM.render(
   <React.StrictMode>

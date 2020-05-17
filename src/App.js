@@ -11,7 +11,6 @@ import Shopping from "./Shopping";
 import Contact from "./Contact";
 import Location from "./Location";
 import Registration from "./Registration";
-/*import history from "./history";*/
 
 // https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch
 // https://swapi.co/
@@ -48,6 +47,7 @@ class App extends React.Component {
 
 
         <Route exact path="/" component={Home}/>
+          <Route path="/registration" component={Registration} />
              <Route path="/location" component={Location}/>
              <Route path="/shopping" component={Shopping}/>
                   <Route path="/contact" component={Contact}/>
