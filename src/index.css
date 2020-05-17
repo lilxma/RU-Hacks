@@ -122,7 +122,7 @@ body {
     margin: 20px;
 }
 
-.button1 {
+.volbtn {
   background-color: beige;
   border: none;
   color: black;
@@ -140,7 +140,7 @@ body {
 
 }
 
-.button2 {
+.userbtn {
   background-color: beige;
   border: none;
   color: black;

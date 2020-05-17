@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import history from './history';
 import './App.css';
-import {Button, ButtonToolbar} from "react-bootstrap"
+//import {Button, ButtonToolbar} from "react-bootstrap"
 import {AddModal} from "./AddModal";
+import { Button } from "./components/button";
 
 
 
@@ -33,9 +34,8 @@ return    <div>
 
     <div class="logo"></div>
     <header class="navbar">Join Us</header>
-      <button class="button1" onClick={this.handle1Click} id="User">User</button>
-      <button class="button2" onClick={this.handle2Click} id= "Volunteer">Volunteer</button>
-
+        <Button class="userbtn">User</Button>
+        <Button class="volbtn">Volunteer</Button>
 
 
 
