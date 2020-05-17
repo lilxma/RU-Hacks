@@ -67,6 +67,7 @@ body {
     margin-bottom: 10px;
     text-align: center;
     font-size: 60px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,30 +218,35 @@ ul.header li a {
 
 
 
-.button1 {
-  background-color: lightgrey;
-    border: none;
-  color: black;
-  padding: 20px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  margin: 10px 110px;
-  font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-  cursor: pointer;
-  position: absolute;
-    transition: .5s ease;
-    top: 90%;
-    left: 30%;
+.todoButton {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: silver;
+    border: black;
+    padding: 10px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 165px;
+    font-style: normal;
+    font-weight: normal;
+    position: relative;
+    top: 20px;
+    left: 400px;
 
 }
 
+.todoButton:hover {
+    transform: translateY(-3px);
+     background-color: grey;
+}
+
 .forms {
-    background-color:bisque;
-    border: black
+    background-color: gainsboro;
+    border: black;
 
 }
 

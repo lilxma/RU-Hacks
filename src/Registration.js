@@ -20,15 +20,7 @@ render(){
 
 
 return    <div>
-    <div class="logo"></div>
     <header class="banner">Bounty</header>
-    <header class="navbar">Join Us</header>
-        <div class="crowd"></div>
-        <div class="volunteer"></div>
-    <button class="button" onClick={this.handle1Click} id="User">User</button>
-    <button class="button" onClick={this.handle2Click} id= "Volunteer">Volunteer</button>
-
-
 
 
     <ButtonToolbar>
@@ -36,7 +28,7 @@ return    <div>
         className="button1"
         variant="primary"
         onClick={()=> this.setState({addModalShow: true})}>
-        Registration
+        Existing User
         </Button>
 
 

@@ -7,11 +7,8 @@ export class AddModal extends Component{
     constructor(props){
         super(props);
         this.state= {
-            firstName: " ",
-            lastName: " ",
-            email: " ",
-            phone: " ",
-            address: " ",
+            username: " ",
+            password: " ",
             identity: this.props.identity,
     }
     }
@@ -40,13 +37,13 @@ export class AddModal extends Component{
         <form className="forms">
         <label>
           First Name:
-          <input type="text" placeholder="Create username..." value={this.state.name} onChange={e => this.setState({firstName: e.target.value})} />
+          <input type="text" placeholder="Enter username..." value={this.state.name} onChange={e => this.setState({username: e.target.value})} />
         </label>
         <br />
             
              <label>
          Last Name:
-          <input type="text" placeholder="Create username..." value={this.state.name} onChange={e => this.setState({lastName: e.target.value})} />
+          <input type="text" placeholder="Enter password..." value={this.state.name} onChange={e => this.setState({password: e.target.value})} />
         </label>
          <br />
             

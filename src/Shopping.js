@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import todosData from "./todosData";
 import TodoItem from "./TodoItem";
+import TodoButton from "./TodoButton";
 
 
 class Shopping extends Component {
@@ -29,12 +30,18 @@ class Shopping extends Component {
                
                return  <div>
         <h2>Start Shopping</h2>
+
         
       <div className="todo-list">
                  {todoComponents}
                  </div>
-      </div>
-    
+
+         <TodoButton class= "todoBtn">no</TodoButton>
+
+            </div>
+
+
+
   }
 }
  
